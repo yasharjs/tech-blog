@@ -7,7 +7,7 @@ router.get('/',(req,res)=>{
         attributes:[
             'id',
             'title',
-            'post_url',
+            'post_text',
             'created_at'
         ],
         include:[
