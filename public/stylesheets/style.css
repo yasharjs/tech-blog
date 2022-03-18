@@ -22,11 +22,16 @@ h1{
    text-align: center;
     margin: 1rem 0;
 }
+
 /* nav links */
 a{
     text-decoration: none;
     color:aliceblue;
 }
+a:hover{
+    color: #50c878;
+}
+
 /* Logout button */
 #logout{
     background: none;
@@ -61,7 +66,6 @@ a{
 h2{
     margin:0;
 }
-
 .meta{
     padding: 1rem;
 }
@@ -73,7 +77,6 @@ h2{
     border-radius: 12px;
     padding-bottom: 1rem;
 }
-
 .login h1, .signup h1{
     background-color: #293241;
     color:white;
@@ -81,7 +84,6 @@ h2{
     padding: 8px;
     text-align: start;
 }
-
 .login-form div, .signup-form div{
     margin: 1rem;
     display: flex;
@@ -91,11 +93,9 @@ input{
     height:2rem;
     margin: 0.2rem 0;
 }
-
 input:focus{
     border:none;
 }
-
 button{
     height: 2rem;
     font-size: 100%;
@@ -103,10 +103,46 @@ button{
     margin-top: 0.2rem;
     border:none;
     background-color:#50c878;
-    border-radius: 12px;
-}
+    border-radius: 12px;   
 
+}
+button:hover{
+    background-color:darkgreen;
+}
 .signup-link,.login-link{
    color:blue;
     margin:1.1rem;
+}
+
+/* comment styles */
+.comment, .comment-form{
+    border: 4px #293241 solid;
+    border-top: 2.5rem #293241 solid;
+    border-radius: 12px;
+    margin:1rem;
+    padding: 1rem;
+ 
+    display: flex;
+    flex-direction: column; 
+}
+.comment .meta{
+    padding: 0;
+    margin:1rem 0;
+}
+.comment .text{
+    margin:1rem 0;
+}
+
+/* comment form styles */
+textarea{
+    width: 100%;
+    height:5rem;
+    margin:1rem 0;
+}
+textarea:focus{
+    border:none;
+}
+.comment-form button{
+    height:3rem;
+    padding: 1rem;
 }
