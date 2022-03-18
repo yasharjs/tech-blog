@@ -51,7 +51,7 @@ a:hover{
 }
 .post{
     border:4px #293241 solid;
-    margin:1rem;
+   margin: 2rem 1rem 1rem 1rem;
     border-radius: 12px;
   
 }
@@ -165,8 +165,18 @@ textarea:focus{
     /* margin:0; */
 }
 .edit-link{
-    color: #293241;
-    margin:1.5rem;
-    font-size: 1.2rem;
-    text-decoration: underline;
+    color: aliceblue;
+    margin: 1.1rem;
+   
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #293241;
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+
+.edit-link:hover{
+    /* background-color: darkgreen; */
+    color:#50c878;
+    /* font-size: 1.2rem; */
 }
