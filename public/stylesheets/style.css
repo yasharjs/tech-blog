@@ -1,9 +1,65 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
+body,html{
+    background-color: #E0FBFC;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
-body{
-    color:red;
+/* Header */
+header{
+    padding: 1rem;
+    background-color: #293241;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+h1{
+   text-align: center;
+    margin: 1rem 0;
+}
+/* nav links */
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+/* Logout button */
+#logout{
+    background: none;
+    border: none;
+    color:aliceblue;
+    cursor: pointer;
+    font-size: 100%;
+    
+}
+
+/* Main */
+.post-list{
+    list-style: none;
+    margin:0;
+    padding: 0;
+  
+}
+.post{
+    border:4px #293241 solid;
+    margin:1rem;
+  
+}
+.title{
+    background-color: #293241;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    color:aliceblue;
+}
+h2{
+    margin:0;
+}
+
+.meta{
+    padding: 1rem;
 }
