@@ -33,7 +33,7 @@ a{
     border: none;
     color:aliceblue;
     cursor: pointer;
-    font-size: 100%;
+    font-weight:normal;
     
 }
 
@@ -67,14 +67,14 @@ h2{
 }
 
 /* Login and Sign up Page */
-.login{
+.login, .signup{
     border:4px #293241 solid;
     margin:1rem;
     border-radius: 12px;
     padding-bottom: 1rem;
 }
 
-.login h1{
+.login h1, .signup h1{
     background-color: #293241;
     color:white;
     margin: 0;
@@ -82,7 +82,7 @@ h2{
     text-align: start;
 }
 
-.login-form div{
+.login-form div, .signup-form div{
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -90,6 +90,10 @@ h2{
 input{
     height:2rem;
     margin: 0.2rem 0;
+}
+
+input:focus{
+    border:none;
 }
 
 button{
@@ -102,9 +106,7 @@ button{
     border-radius: 12px;
 }
 
-.signup-link{
-   text-decoration: underline;
+.signup-link,.login-link{
    color:blue;
-    margin:1rem;
-    
+    margin:1.1rem;
 }
