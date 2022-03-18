@@ -42,7 +42,7 @@ a:hover{
     
 }
 
-/* Main */
+/* Homepage*/
 .post-list{
     list-style: none;
     margin:0;
@@ -127,10 +127,10 @@ button:hover{
 }
 .comment .meta{
     padding: 0;
-    margin:1rem 0;
+    margin:0.5rem 0;
 }
 .comment .text{
-    margin:1rem 0;
+    margin:0.5rem 0;
 }
 
 /* comment form styles */
@@ -145,4 +145,28 @@ textarea:focus{
 .comment-form button{
     height:3rem;
     padding: 1rem;
+}
+
+/* Dashboard */
+.add-post{
+ border: 4px #293241 solid;
+ border-top:2.5rem #293241 solid;
+    margin:1.5rem 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.new-post-form div{
+    display:flex;
+    flex-direction: column;
+    margin:1rem 0;
+}
+.btn{
+    width: 100%;
+    /* margin:0; */
+}
+.edit-link{
+    color: #293241;
+    margin:1.5rem;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
