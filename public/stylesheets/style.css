@@ -12,6 +12,7 @@ body,html{
 header{
     padding: 1rem;
     background-color: #293241;
+    margin-bottom:1rem;
 }
 nav{
     display: flex;
@@ -39,7 +40,10 @@ a:hover{
     color:aliceblue;
     cursor: pointer;
     font-weight:normal;
-    
+}
+#logout:hover{
+    color:#50c878;
+
 }
 
 /* Homepage*/
@@ -174,9 +178,39 @@ textarea:focus{
     padding: 0.5rem;
     border-radius: 12px;
 }
-
 .edit-link:hover{
     /* background-color: darkgreen; */
     color:#50c878;
     /* font-size: 1.2rem; */
+}
+
+/* edit post */
+.edit-post{
+    margin:1rem;
+    border:4px #293241 solid;
+    border-top: 2.5rem #293241 solid;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size:1.2rem;
+}
+.edit-post-form div{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.edit-post-form textarea, .edit-post-form input{
+    margin-top: 0.5rem;
+}
+.back-to-dashboard{
+    color:black;
+    margin:1rem;
+    font-size: 1.2rem;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.buttons button{
+    width:50%;
+    margin:0 1rem;
 }
