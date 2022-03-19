@@ -6,6 +6,7 @@ body,html{
     height: 100%;
     padding: 0;
     margin: 0;
+    font-family: Poppins,sans-serif;
 }
 
 /* Header */
@@ -39,11 +40,12 @@ a:hover{
     border: none;
     color:aliceblue;
     cursor: pointer;
-    font-weight:normal;
+    font-family: Poppins, sans-serif;
+    font-weight: 100;
+    
 }
 #logout:hover{
     color:#50c878;
-
 }
 
 /* Homepage*/
@@ -55,9 +57,8 @@ a:hover{
 }
 .post{
     border:4px #293241 solid;
-   margin: 2rem 1rem 1rem 1rem;
+    margin: 2rem 1rem 1rem 1rem;
     border-radius: 12px;
-  
 }
 .title{
     background-color: #293241;
@@ -72,6 +73,9 @@ h2{
 }
 .meta{
     padding: 1rem;
+}
+.comment-link{
+    text-decoration: underline;
 }
 
 /* Login and Sign up Page */
