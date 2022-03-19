@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const {Comment} = require('../../models');
+const withAuth = require('../../utils/auth');
 
 // GET /api/comments/
 router.get('/',(req,res)=>{
@@ -14,7 +15,7 @@ router.get('/',(req,res)=>{
 });
 
 // POST /api/comments
-router.post('/',(req,res)=>{   //ADD withAuth
+router.post('/',withAuth,(req,res)=>{   //ADD withAuth
     if(req.session){
         Comment.create({
             comment_text: req.body.comment_text,
@@ -31,7 +32,7 @@ router.post('/',(req,res)=>{   //ADD withAuth
 })
 
 // DELETE /api/comments/1
-router.delete('/:id',(req,res)=>{   //ADD withAuth
+router.delete('/:id',withAuth,(req,res)=>{   //ADD withAuth
     Comment.destroy({
         where:{
             id:req.params.id
