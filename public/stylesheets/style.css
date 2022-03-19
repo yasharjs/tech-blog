@@ -116,6 +116,7 @@ button{
 }
 button:hover{
     background-color:darkgreen;
+    cursor: pointer;
 }
 .signup-link,.login-link{
    color:blue;
@@ -217,4 +218,11 @@ textarea:focus{
 .buttons button{
     width:50%;
     margin:0 1rem;
+}
+
+.delete-post-btn{
+    background-color: crimson;
+}
+.delete-post-btn:hover{
+    background-color: crimson;
 }
